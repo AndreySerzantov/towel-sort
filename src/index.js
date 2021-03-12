@@ -4,11 +4,11 @@
 module.exports = function towelSort (matrix) {
   let arr = [];
 
-  for(let i = 0; i < array.length; i++){
+  for(let i = 0; i < matrix.length; i++){
       if(i % 2 == 0){
-          arr = arr.concat(array[i]);
+          arr = arr.concat(matrix[i]);
       }else{
-          arr = arr.concat(array[i].sort((a, b) => {return b - a}));
+          arr = arr.concat(matrix[i].sort((a, b) => {return b - a}));
       }
   }
 
